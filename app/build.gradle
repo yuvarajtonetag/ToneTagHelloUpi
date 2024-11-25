@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.tonetag.helloupidemo'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.tonetag.helloupidemo"
+        minSdk 23
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+    implementation 'org.tensorflow:tensorflow-lite-task-audio:0.4.4'
+//    implementation 'org.bitbucket.team_android_apps:helloupi:v1.0.0'
+//    implementation 'com.tonetag.helloupi:HelloUpi:1.0.0'
+    implementation 'org.bitbucket.team_android_apps:helloupi:1.0.0'
+//    implementation files('libs/HelloUpi-v1.0.0-release.aar')
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
+}

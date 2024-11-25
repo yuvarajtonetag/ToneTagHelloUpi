@@ -1,0 +1,63 @@
+<resources>
+    <declare-styleable name="PinViewTheme">
+        <attr name="pinViewStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PinView">
+        <attr name="itemCount" format="integer" />
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="itemRadius" format="dimension" />
+        <attr name="itemSpacing" format="dimension" />
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="reference|color" />
+        <attr name="viewType" format="enum">
+            <enum name="rectangle" value="0" />
+            <enum name="line" value="1" />
+            <enum name="none" value="2" />
+        </attr>
+        <attr name="android:cursorVisible" />
+        <attr name="cursorWidth" format="dimension" />
+        <attr name="cursorColor" format="reference|color" />
+        <attr name="android:itemBackground" />
+        <attr name="hideLineWhenFilled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="Compass">
+
+        <attr name="degree_color" format="color" />
+        <attr name="show_orientation_labels" format="boolean"/>
+        <attr name="orientation_labels_color" format="color"/>
+        <attr name="show_degree_value" format="boolean" />
+        <attr name="degree_value_color" format="color" />
+        <attr name="needle" format="integer"/>
+        <attr name="degrees_step" format="integer"/>
+        <attr name="show_border" format="boolean"/>
+        <attr name="border_color" format="color"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="SmoothProgressBar">
+        <attr name="spbStyle" format="reference"/>
+        <attr name="spb_color" format="color"/>
+        <attr name="spb_stroke_width" format="dimension"/>
+        <attr name="spb_stroke_separator_length" format="dimension"/>
+        <attr name="spb_sections_count" format="integer"/>
+        <attr name="spb_speed" format="float"/>
+        <attr name="spb_progressiveStart_speed" format="float"/>
+        <attr name="spb_progressiveStop_speed" format="float"/>
+        <attr name="spb_interpolator" format="enum">
+            <enum name="spb_interpolator_accelerate" value="0"/>
+            <enum name="spb_interpolator_linear" value="1"/>
+            <enum name="spb_interpolator_acceleratedecelerate" value="2"/>
+            <enum name="spb_interpolator_decelerate" value="3"/>
+        </attr>
+        <attr name="spb_reversed" format="boolean"/>
+        <attr name="spb_mirror_mode" format="boolean"/>
+        <attr name="spb_colors" format="reference"/>
+        <attr name="spb_progressiveStart_activated" format="boolean"/>
+        <attr name="spb_background" format="reference"/>
+        <attr name="spb_generate_background_with_colors" format="boolean"/>
+        <attr name="spb_gradients" format="boolean"/>
+    </declare-styleable>
+</resources>

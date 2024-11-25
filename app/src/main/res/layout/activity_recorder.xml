@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_env_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Environment"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/sp_environment"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tv_env_label"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/bg_curved_20dp_grey_dashed_stroke_grey_solid"
+                android:itemTextAppearance="@color/black"
+                android:paddingStart="10dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:id="@+id/tv_lang_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sp_environment"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Select Language"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/language_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tv_lang_label"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/bg_curved_20dp_grey_dashed_stroke_grey_solid"
+                android:itemTextAppearance="@color/black"
+                android:paddingStart="10dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:id="@+id/tv_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/language_spinner"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Email Address"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/et_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_label"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/bg_curved_20dp_grey_dashed_stroke_grey_solid"
+                android:hint="Please enter your email address"
+                android:inputType="textEmailAddress"
+                android:maxLines="2"
+                android:paddingStart="10dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_receive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_email_address"
+                android:layout_margin="30dp"
+                android:background="@drawable/bg_curved_chat_bot"
+                android:onClick="onClick"
+                android:text="Start HelloUpi"
+                android:textAllCaps="true"
+                android:textSize="25sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btn_receive">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_connection_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvRxData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_connection_status"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_hello_upi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:onClick="onClick"
+                android:src="@drawable/ic_hello_upi"
+                android:visibility="gone"
+                app:elevation="20dp"
+                app:maxImageSize="48dp"
+                app:useCompatPadding="true" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

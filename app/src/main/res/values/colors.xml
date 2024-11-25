@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="half_white">#80ffffff</color>
+    <color name="rippelColor">#709B1B</color>
+    <color name="green_65E198">#65E198</color>
+    <color name="error_red">#c62828</color>
+    <item name="red" type="color">#FFFF4444</item>
+    <color name="tonetag_green">#27D802</color>
+    <color name="grey_939393">#939393</color>
+
+    <color name="mg_text_grey">#C4C4C4</color>
+    <color name="mg_subtext_grey">#7A7A7A</color>
+    <color name="mg_et_bg">#09131B</color>
+    <color name="mg_btn_bg">#373737</color>
+    <color name="mg_upi_bg">#1B3280</color>
+    <color name="mg_back_bg">#303B45</color>
+    <color name="mg_selected_bg">#54FF03</color>
+    <color name="keypad_bg">#F1F1F1</color>
+    <color name="color_green_25D800">#25D800</color>
+    <color name="color_1E1E1E">#1E1E1E</color>
+    <color name="content_bg">#131C24</color>
+    <color name="button_blue">#0047FF</color>
+    <color name="app_bg">#09131B</color>
+    <color name="dialog_popup_bg">#151E27</color>
+    <color name="dialog_content_bg">#09131B</color>
+    <color name="tint_blue">#110077</color>
+    <color name="grey_1B1B1B">#1B1B1B</color>
+
+    <integer-array name="gplus_colors">
+        <item>@color/gplus_color_1</item>
+        <item>@color/gplus_color_2</item>
+        <item>@color/gplus_color_3</item>
+        <item>@color/gplus_color_4</item>
+    </integer-array>
+    <color name="gplus_color_1">#3e802f</color>
+    <color name="gplus_color_2">#f4b400</color>
+    <color name="gplus_color_3">#427fed</color>
+    <color name="gplus_color_4">#b23424</color>
+    <integer-array name="pocket_bar_colors">
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_1</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_2</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_3</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+        <item>@color/pocket_color_4</item>
+    </integer-array>
+    <color name="pocket_color_1">#85edb9</color>
+    <color name="pocket_color_2">#34bdb7</color>
+    <color name="pocket_color_3">#ee4458</color>
+    <color name="pocket_color_4">#fcb74d</color>
+    <color name="hint_grey">#90ffffff</color>
+    <color name="grey_7A7A7A">#8D8585</color>
+    <color name="fail_red">#FC100D</color>
+    <color name="yellow">#B6CB34</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey_c2c2c2">#C2C2C2</color>
+</resources>
